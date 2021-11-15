@@ -5,10 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lacasitos Wheel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="scss/main-style.scss">
 </head>
 <body>
-    
+    <header>
+        <a href="index.html">
+            <img src="assets/lacasitoswheel-logo.png" alt="Lacasitos Wheel logo">
+        </a>   
+    </header>
+    <main>
+        <section id="section__new-participant">
+            <input type="text" class="form-control" placeholder="Añadir participante">
+            <button type="button" class="btn btn-circle"><i class="fa fa-plus"></i></button>
+        </section>
+        <section id="section__interactive">
+            <div>
+                <img src="assets/tubo-lacasitos-tapa.png" alt="Pulsa para jugar">
+            </div>
+            <aside id="section__interactive--aside">
+                <div id="section__interactive--buttons">
+                    <button class="btn btn-primary">Jugar</button>
+                    <button class="btn" id="btn-refresh"><i class="fa fa-refresh"></i></button>
+                </div>
+                <div id="section__interactive--selected-list"></div>
+            </aside>
+        </section>
+    </main>
     <script src="scripts/function.js" type="module"></script>
 </body>
 </html>
