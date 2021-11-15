@@ -14,3 +14,36 @@ header {
         max-height: 2rem;
     }
 }
+
+#section__new-participant {
+    background: $first-color;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    input {
+        border: none;
+        border-radius: 6px;
+        padding: 8px;
+        width: 75%;
+    }
+
+    button.btn-circle {
+        border: none;
+        border-radius: 20px;
+        background: $second-color;
+        height: 2rem;
+        width: 2rem;
+
+        i.fa.fa-plus {
+            color: $third-color;
+        }
+    }
+}
+
+#section__interactive {
+    aside {
+        width: 36%;       
+    }
+}
