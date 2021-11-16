@@ -29,8 +29,6 @@ header {
         border: none;
         border-radius: 20px;
         background: $second-color;
-        height: 2rem;
-        width: 2rem;
 
         i.fa.fa-plus {
             color: $third-color;
@@ -38,8 +36,54 @@ header {
     }
 }
 
-#section__interactive {
-    aside {
-         
+#section__to-play {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    #section__to-play--selected-list {
+        margin-top: 1.5rem;
+        overflow: scroll;
+        max-height: 8.5rem;
+        border: 0.5px dotted;
+        padding: 0.5rem 0rem 1rem 0rem;
+    }
+}
+
+#participantsAccordion {
+    background: $first-color;
+    margin-top: 6rem;
+
+    .accordion-button {
+        background: $first-color;
+        box-shadow: none;
+    }
+
+    .accordion-button::after {
+        color: $main-color;
+        font-weight: bold;
+        margin: auto;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background: $first-color;
+        color: $main-color;
+    }
+
+    .accordion-body {
+        background: rgba($first-color, 0.8); 
+        
+        ul {
+            list-style: none;
+
+            span {
+                background: #fff;
+                width: 12rem;
+                display: inline-block;
+                border-radius: 6px;
+                padding: 0.5rem 0.8rem;
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-#section__interactive--buttons {
+#section__to-play--buttons {
     #btn-refresh {
         background: $third-color;
 
@@ -8,8 +8,20 @@
     }
 }
 
-#section__interactive {
+#section__to-play {
+   img {
+       max-width: 44%;
+   }   
    
-      
-}
+   #section__to-play--buttons {
+        button {
+        padding: 0.2rem 0.6rem 0.35rem 0.6rem;
+        }
 
+        .btn-primary {
+            color: #fff;
+            background-color: $first-color;
+            border: none;
+        }
+   }
+}
