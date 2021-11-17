@@ -54,6 +54,9 @@ header {
 #participantsAccordion {
     background: $first-color;
     margin-top: 6rem;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 
     .accordion-button {
         background: $first-color;
@@ -76,11 +79,14 @@ header {
         
         ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
 
             li {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin: 1rem;
             }
 
             span {
