@@ -21,8 +21,8 @@
     </header>
     <main>
         <section id="section__new-participant">
-            <input type="text" class="form-control" placeholder="Añadir participante">
-            <button type="button" class="btn btn-circle"><i class="fa fa-plus"></i></button>
+            <input id="input-new-participant" type="text" class="form-control" placeholder="Añadir participante">
+            <button id="btn-new-participant" type="button" class="btn btn-circle"><i class="fa fa-plus"></i></button>
         </section>
         <section id="section__to-play">
             <img class="wobble-to-bottom-right" src="assets/tubo-lacasitos-tapa.png" alt="Pulsa para jugar">
@@ -40,7 +40,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#participantsAccordion">
-                <div class="accordion-body"></div>
+                <div id="participants-container" class="accordion-body"></div>
               </div>
             </div>
         </div>
