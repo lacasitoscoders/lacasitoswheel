@@ -77,12 +77,22 @@ header {
         ul {
             list-style: none;
 
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
             span {
                 background: #fff;
                 width: 12rem;
                 display: inline-block;
                 border-radius: 6px;
                 padding: 0.5rem 0.8rem;
+            }
+
+            .fa-icons:before {
+                content: "";
             }
         }
     }

@@ -25,3 +25,20 @@
         }
    }
 }
+
+.accordion-body {
+    .fa-user-minus:before {
+        background: $fourth-color;
+        border-radius: 6px;
+        color: $main-color;
+        padding: 0.5rem 0.4rem;
+    }
+
+    .fa-edit:before {
+        background: $main-color;
+        border-radius: 6px;
+        color: $fourth-color;
+        padding: 0.5rem 0.4rem 0.5rem 0.55rem;
+    }
+
+}
