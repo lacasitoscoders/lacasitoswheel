@@ -1,6 +1,8 @@
 let inputNewParticipant = document.getElementById("input-new-participant");
 let btnNewParticipant = document.getElementById("btn-new-participant");
 let participantsContainer = document.getElementById("participants-container");
+let selectedList = document.getElementById("section__to-play--selected-list");
+let btnPlay = document.getElementById("btn-play");
 let listofParticipants = [];
 
 btnNewParticipant.addEventListener('click', addParticipant);
@@ -15,9 +17,7 @@ function addParticipant() {
     if (inputNewParticipant.value = '') {
         inputNewParticipant.placeholder = '¡Añade participante!';
     }
-}
-        
-        
+}       
 
 function renderParticipantsList() {
     participantsContainer.innerHTML = '<ul id="ul-participants"></ul>';
@@ -30,6 +30,14 @@ function renderParticipantsList() {
     })
 }
 
+btnPlay.addEventListener( 'click', selectedWinner);
+
+function selectedWinner () {
+    let winner = Math.floor(Math.random() * listofParticipants.length);
+    let winnerName = listofParticipants[winner];
+    selectedList.innerHTML += `<li>${winnerName}</li>`
+    
+}
 
 function deleteParticipant()
 {
