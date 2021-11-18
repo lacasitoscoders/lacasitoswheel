@@ -30,13 +30,16 @@ function renderParticipantsList() {
     })
 }
 
-btnPlay.addEventListener( 'click', selectedWinner);
+btnPlay.addEventListener('click', selectedWinner);
 
 function selectedWinner () {
     let winner = Math.floor(Math.random() * listofParticipants.length);
     let winnerName = listofParticipants[winner];
     selectedList.innerHTML += `<li>${winnerName}</li>`
-    
+    listofParticipants.splice(winner, 1);
+    //If para tratar inhabilitar el juego
+    if (listofParticipants.length === 0) {
+    }
 }
 
 function deleteParticipant()
